@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item-sliding #item>
+      <ion-item>
+        Item1
+      </ion-item>
+      <ion-item-options side="left">
+        <button ion-button (click)="favorite(item)">Favorite</button>
+      </ion-item-options>
+  
+      <ion-item-options side="right">
+        <button ion-button (click)="ClickMe('item1')">Unread</button>
+      </ion-item-options>
+    </ion-item-sliding>
+    <ion-item-sliding #item>
+      <ion-item>
+        Item2
+      </ion-item>
+      <ion-item-options side="left">
+        <button ion-button (click)="favorite(item)">Favorite</button>
+      </ion-item-options>
+  
+      <ion-item-options side="right">
+        <button ion-button (click)="ClickMe('item2')">Unread</button>
+      </ion-item-options>
+    </ion-item-sliding>
+    <ion-item-sliding #item>
+      <ion-item>
+        Item3
+      </ion-item>
+      <ion-item-options side="left">
+        <button ion-button (click)="favorite(item)">Favorite</button>
+      </ion-item-options>
+  
+      <ion-item-options side="right">
+        <button ion-button (click)="ClickMe('item3')">Unread</button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>
